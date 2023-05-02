@@ -17,7 +17,7 @@ body {
   height: 2px;
   width: 100%;
   min-width: 3px;
-  background-color: blue;
+  background-color: #007bff;
   transition: width 1s;
 }
 
@@ -27,17 +27,19 @@ body {
 
 #survey-container h1 {
 	margin: 0;
-	font-size: 32px;
+  margin-bottom: 20px;
+	font-size: 36px;
 	text-align: center;
 }
 
 #survey-container p {
-	margin: 20px 0;
+	margin: 10px 0;
 	font-size: 20px;
+  line-height: 1.2;
 }
 
 #answer-container {
-	margin-top: 20px;
+	margin-top: 8px;
 }
 
 #answer-container label {
@@ -51,6 +53,7 @@ body {
   justify-content: left;
   align-items: flex-start;
   margin-left: 8px;
+  padding-bottom: 3px;
 }
 
 #btn-div {
