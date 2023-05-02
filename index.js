@@ -2,6 +2,7 @@ const numQuestions = questions.length;
 
 let currentQuestion = 0;
 const progressEl = document.getElementById("progress-bar");
+progressEl.style.width = "100%"
 const scenarioEl = document.getElementById("scenario");
 const questionEl = document.getElementById("question");
 
