@@ -16,7 +16,6 @@ const setBtn = () => {
     const answer = selectedOption.value;
     // const weights = questions[currentQuestion].weights[answer];
 
-
     currentQuestion++;
     if (currentQuestion == questions.length) {
         progressEl.style.width = `${currentQuestion/numQuestions*100}%`
