@@ -48,6 +48,10 @@ for (let i = 0; i < 10000; i++) {
 
 const setBtn = () => {
   document.getElementById("next-btn").addEventListener("click", () => {
+    if (currentQuestion == numQuestions) {
+      location.reload();
+      return;
+    }
     const selectedOption = document.querySelector('input[name="answer"]:checked');
     if (!selectedOption) {
         return;
@@ -88,9 +92,10 @@ const showQuestion = () => {
         <label for="option${i}" id="option${i}-label"></label>
       </div>`;
   }
+  const btnText = currentQuestion < numQuestions ? "Next" : "Again?"
   answerContainer.innerHTML = s+`
     <div id="btn-div">
-      <button id="next-btn">Next</button>
+      <button id="next-btn">${btnText}</button>
     </div>
   `
   for (let i = 1; i <= numOptions; i++) {
